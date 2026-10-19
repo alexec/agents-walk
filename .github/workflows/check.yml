@@ -1,0 +1,9 @@
+name: check
+on: pull_request
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: greeting.txt says hello
+        run: grep -qx 'hello' greeting.txt
