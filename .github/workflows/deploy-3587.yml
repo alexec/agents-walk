@@ -1,0 +1,10 @@
+name: Release
+on:
+  push:
+    branches: [walk-3587]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: deploy-3587
+    steps:
+      - run: echo "deployed"
